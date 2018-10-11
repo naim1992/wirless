@@ -1,0 +1,23 @@
+<div class="container">
+  <form name="form" #f="ngForm" (ngSubmit)="onValidation()" novalidate >
+  
+    <p>
+    userName: <input name="userMail" [(ngModel)]="model.userMail" type="text" placeholder="your email" class="form-control" />
+    </p>
+    
+    <p>
+      password : <input name="userPassword" [(ngModel)]="model.userPassword"   type="password" class="form-control"/>
+    </p>
+  
+    <p>
+      <input type="button" value="valider" (click)="onValidation()" />
+    </p>
+  
+    <!--
+    {{model | json}}
+    -->
+  </form>
+  <p>
+    <input type="button" value="clicl" (click)="onClick()" />
+  </p>
+</div>

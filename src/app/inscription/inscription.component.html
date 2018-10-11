@@ -1,0 +1,28 @@
+<div class="container">
+
+<form (ngSubmit)="onValidation()">  
+  <label>user Mail</label>
+  <input class="form-control" type="email" name="userMail" [(ngModel)]="model.userMail" /> 
+
+  <label>user Password</label>
+  <input class="form-control" type="password" name="userPassword" [(ngModel)]="model.userPassword" /> 
+
+  <label>user Name</label>
+  <input class="form-control" type="text" name="userName" [(ngModel)]="model.userName" /> 
+
+  <label>user Address </label>
+  <input class="form-control" type="text" name="userAddress" [(ngModel)]="model.userAddress" /> 
+
+  <label>user Phone</label>
+  <input class="form-control" type="tel" name="userPhone" [(ngModel)]="model.userPhone" />
+
+  <input type="submit" class="btn btn-primary" />
+  
+</form>
+
+<!--
+<div>
+  {{model | json}}
+</div>
+-->
+</div>
